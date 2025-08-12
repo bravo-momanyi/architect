@@ -1,4 +1,4 @@
-const API_BASE = "http://localhost:8000"; // Change to your backend URL when hosted
+const API_BASE = "http://127.0.0.1:8000"; // Change to your backend URL when hosted
 
 document.getElementById("generateForm").onsubmit = async (e) => {
     e.preventDefault();
@@ -23,3 +23,4 @@ document.getElementById("qaForm").onsubmit = async (e) => {
     let data = await res.json();
     document.getElementById("qaAnswer").innerText = data.answer;
 };
+
